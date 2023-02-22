@@ -1,0 +1,51 @@
+.supper-chair-section {
+    height: 604px;
+    background: url('../assets/super-chair.png');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    &__text-container {
+        margin-left: 405px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: left;
+        width: 308px;
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 56px;
+            color: white;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: white;
+        }
+
+        button {
+            width: 170px;
+            height: 40px;
+            background-color: rgba(102, 192, 93, 1);
+            border-radius: 40px;
+            border-color: white;
+            border-style: solid;
+
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: white;
+        }
+    }
+
+}

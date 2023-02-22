@@ -1,0 +1,19 @@
+main {
+    nav {
+        width: 675px;
+        align-self: center;
+        height: 79px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}

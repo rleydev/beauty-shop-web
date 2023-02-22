@@ -1,0 +1,165 @@
+.special-offers-section {
+    height: 954px;
+    background-color: rgba(239, 239, 239, 1);
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        margin-top: 80px;
+        margin-bottom: 132px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        &__item-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            &__item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                background-color: white;
+                width: 255px;
+                height: 363px;
+
+                img {
+                    width: 125px;
+                    height: 166px;
+                }
+
+                p {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: rgba(51, 51, 51, 1);
+                    width: 195px;
+                    text-align: center;
+                }
+
+                h4 {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 500;
+                    font-size: 21px;
+                    line-height: 24px;
+                    color: black;
+                }
+
+                button {
+                    width: 170px;
+                    height: 40px;
+                    border-radius: 40px;
+                    border: none;
+                    background-color: rgba(102, 192, 93, 1);
+
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    &__banner-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__banner {
+            display: flex;
+            background-color: rgba(102, 192, 93, 1);
+            width: 540px;
+            height: 212px;
+            align-items: center;
+            justify-content: center;
+
+            &__flex {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 455px;
+
+                img {
+                    width: 140px;
+                    height: 106px;
+                }
+
+                &__left {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: left;
+                    gap: 25px;
+
+                    &__title {
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: white;
+                    }
+
+                    &__text {
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 19px;
+                        color: white;
+                        max-width: 250px;
+                        text-align: left;
+                    }
+
+                    &__rtext {
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 19px;
+                        color: white;
+                        max-width: 141px;
+                        text-align: left;
+                    }
+
+                    input {
+                        border-radius: 30px;
+                        max-width: 225px;
+                        height: 35px;
+                        border: none;
+                        padding: 20px;
+                        color: rgba(196, 196, 196, 1);
+                    }
+
+                    button {
+                        width: 170px;
+                        height: 40px;
+                        background-color: rgba(102, 192, 93, 1);
+                        border-radius: 40px;
+                        border-color: white;
+                        border-style: solid;
+
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
