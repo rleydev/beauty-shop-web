@@ -1,0 +1,108 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 184px;
+}
+
+.footer-container {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(239, 239, 239, 1);
+
+    &__text {
+        width: 1057px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: rgba(130, 130, 130, 1);
+
+            &:last-of-type {
+                text-align: right;
+            }
+        }
+
+
+    }
+
+    
+
+}
+
+.footer-contact-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1057px;
+    height: 120px;
+
+    &__adress {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: black;
+        width: 227px;
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            color: black;
+        }
+
+        button {
+            width: 170px;
+            height: 40px;
+            border-radius: 40px;
+            border-color: rgba(102, 192, 93, 1);
+            border-style: solid;
+
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    &__smedia-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        &__circle {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 1px solid rgba(102, 192, 93, 1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

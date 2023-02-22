@@ -301,4 +301,97 @@ main nav a {
   font-size: 14px;
   line-height: 16px;
   color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 184px;
+}
+
+.footer-container {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(239, 239, 239);
+}
+.footer-container__text {
+  width: 1057px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-container__text p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgb(130, 130, 130);
+}
+.footer-container__text p:last-of-type {
+  text-align: right;
+}
+
+.footer-contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1057px;
+  height: 120px;
+}
+.footer-contact-container__adress {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+  width: 227px;
+}
+.footer-contact-container__contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+.footer-contact-container__contact p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: black;
+}
+.footer-contact-container__contact button {
+  width: 170px;
+  height: 40px;
+  border-radius: 40px;
+  border-color: rgb(102, 192, 93);
+  border-style: solid;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.footer-contact-container__smedia-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.footer-contact-container__smedia-container__circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid rgb(102, 192, 93);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
