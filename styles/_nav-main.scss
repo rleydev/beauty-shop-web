@@ -1,3 +1,4 @@
+@use './mixins';
 main {
     nav {
         width: 675px;
@@ -8,6 +9,17 @@ main {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
+
+        @include mixins.media-query('720px') {
+            width: 100%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+
+        @include mixins.media-query('500px') {
+            display: none;
+        }
 
         a {
             font-family: 'Roboto', sans-serif;

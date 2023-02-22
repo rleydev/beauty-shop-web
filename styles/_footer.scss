@@ -1,3 +1,5 @@
+@use './mixins';
+
 footer {
     display: flex;
     flex-direction: column;
@@ -22,22 +24,38 @@ footer {
         justify-content: space-between;
         align-items: center;
 
+        @include mixins.media-query('1074px') {
+            width: 700px;
+        }
+
+        @include mixins.media-query('720px') {
+            width: 500px;
+            flex-direction: column;
+            gap: 5px;
+        }
+
         p {
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
-            font-size: 12px;
+            font-size: 10px;
             line-height: 14px;
             color: rgba(130, 130, 130, 1);
 
+            @include mixins.media-query('500px') {
+                padding-left: 3%;
+                padding-right: 3%;
+                text-align: center;
+            }
+
             &:last-of-type {
                 text-align: right;
+
+                @include mixins.media-query('1074px') {
+                    display: none;
+                }
             }
         }
-
-
     }
-
-    
 
 }
 
@@ -50,6 +68,21 @@ footer {
     width: 1057px;
     height: 120px;
 
+    @include mixins.media-query('1074px') {
+        justify-content: center;
+        gap: 30px;
+        width: 700px;
+    }
+
+
+    @include mixins.media-query('720px') {
+        width: 100%;
+    }
+
+    @include mixins.media-query('500px') {
+        flex-direction: column;
+    }
+
     &__adress {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
@@ -57,14 +90,31 @@ footer {
         line-height: 16px;
         color: black;
         width: 227px;
+
+
+        @include mixins.media-query('1074px') {
+            font-size: 12px;
+            width: auto;
+            text-align: center;
+        }
+
     }
 
     &__contact {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         gap: 40px;
         align-items: center;
+
+        @include mixins.media-query('1074px') {
+            gap: 10px;
+            width: 100%;
+        }
+
+        @include mixins.media-query('720px') {
+            display: none;
+        }
 
         p {
             font-family: 'Roboto', sans-serif;
@@ -72,6 +122,11 @@ footer {
             font-size: 16px;
             line-height: 18px;
             color: black;
+
+            @include mixins.media-query('1074px') {
+                font-size: 12px;
+            }
+
         }
 
         button {

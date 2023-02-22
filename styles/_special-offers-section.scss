@@ -1,8 +1,15 @@
+@use './mixins';
+
 .special-offers-section {
     height: 954px;
+    width: 100%;
     background-color: rgba(239, 239, 239, 1);
     display: flex;
     justify-content: center;
+
+    @include mixins.media-query('830px') {
+        height: auto;
+    }
 
     &__container {
         margin-top: 80px;
@@ -11,11 +18,20 @@
         flex-direction: column;
         justify-content: space-between;
 
+        @include mixins.media-query('1120px') {
+            width: 70%;
+            align-items: center;
+        }
+
         h3 {
             font-family: 'Roboto', sans-serif;
             font-weight: 700;
             font-size: 24px;
             line-height: 28px;
+
+            @include mixins.media-query('500px') {
+            text-align: center;
+            }
         }
 
         &__item-container {
@@ -24,6 +40,12 @@
             justify-content: center;
             align-items: center;
             gap: 30px;
+
+            @include mixins.media-query('830px') {
+                flex-direction: column;
+                margin-top: 30px;
+                margin-bottom: 70px;
+            }
 
             &__item {
                 display: flex;
@@ -34,6 +56,10 @@
                 background-color: white;
                 width: 255px;
                 height: 363px;
+
+                @include mixins.media-query('1120px') {
+                    width: 180px;
+                }
 
                 img {
                     width: 125px;
@@ -80,6 +106,16 @@
         flex-direction: row;
         justify-content: space-between;
 
+        @include mixins.media-query('1120px') {
+            justify-content: center;
+            gap: 30px;
+        }
+
+        @include mixins.media-query('830px') {
+            flex-direction: column;
+        }
+
+
         &__banner {
             display: flex;
             background-color: rgba(102, 192, 93, 1);
@@ -88,6 +124,10 @@
             align-items: center;
             justify-content: center;
 
+            @include mixins.media-query('1120px') {
+                width: 350px;
+            }
+
             &__flex {
                 display: flex;
                 flex-direction: row;
@@ -95,9 +135,18 @@
                 align-items: center;
                 width: 455px;
 
+                @include mixins.media-query('1120px') {
+                    width: 85%;
+                }
+
                 img {
                     width: 140px;
                     height: 106px;
+
+                    @include mixins.media-query('1120px') {
+                        width: 20%;
+                        height: 20%;
+                    }
                 }
 
                 &__left {
@@ -106,6 +155,10 @@
                     justify-content: center;
                     align-items: left;
                     gap: 25px;
+
+                    @include mixins.media-query('1120px') {
+                        gap: 15px;
+                    }
 
                     &__title {
                         font-family: 'Roboto', sans-serif;
@@ -123,6 +176,11 @@
                         color: white;
                         max-width: 250px;
                         text-align: left;
+
+                        @include mixins.media-query('1120px') {
+                            max-width: 185px;
+                        }
+
                     }
 
                     &__rtext {

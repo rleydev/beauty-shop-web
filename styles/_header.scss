@@ -1,9 +1,16 @@
+@use './mixins';
+
 header {
     display: flex;
     flex-direction: column;
     height: 170px;
     align-items: center;
     border-bottom: 1px solid rgba(239, 239, 239, 1);
+
+    
+    @include mixins.media-query('500px') {
+       height: auto;
+    }
 
     nav {
         display: flex;
@@ -15,11 +22,35 @@ header {
         gap: 30px;
         background-color: rgba(239, 239, 239, 1);
 
+
+        @include mixins.media-query('720px') {
+           width: 100%;
+           padding-left: 3%;
+           padding-right: 3%;
+           justify-content: space-between;
+        }
+
+        @include mixins.media-query('500px') {
+            flex-direction: column;
+            height: auto;
+            gap: 0px;
+        }
+
         a {
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
-            font-size: 14px;
-            line-height: 16px;
+            font-size: 12px;
+            line-height: 12px;
+
+            text-align: center;
+
+            @include mixins.media-query('500px') {
+                padding-top: 3%;
+                padding-bottom: 3%;
+                border-bottom: 1px solid rgba(102, 192, 93, 1);
+                width: 100%;
+            }
+            
         }
     }
 }
@@ -31,11 +62,33 @@ header {
     justify-content: space-between;
     height: 120px;
 
+    @include mixins.media-query('1074px') {
+        width: 700px;
+    }
+
+    @include mixins.media-query('720px') {
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include mixins.media-query('500px') {
+        height: auto;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
     &__logo {
         display: flex;
         flex-direction: row;
         gap: 20px;
         align-items: center;
+
+        @include mixins.media-query('500px') {
+            flex-direction: column;
+            gap: 10px;
+        }
 
         img {
             width: 80px;
@@ -48,6 +101,11 @@ header {
         align-items: center;
         flex-direction: row;
         gap: 40px;
+
+        @include mixins.media-query('500px') {
+            flex-direction: column;
+            gap: 10px;
+        }
 
         p {
             font-family: 'Roboto', sans-serif;
