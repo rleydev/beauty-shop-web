@@ -1,6 +1,6 @@
 # Beauty shop landing 
 ## About:
-- Figma design 1920px width
+- Figma desktop design 1920px width, mobile 320px
 - HTML
 - CSS
 - SASS/SCSS
